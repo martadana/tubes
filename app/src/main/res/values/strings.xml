@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MyZodiak</string>
+    <string-array name="zodiak">
+        <item>Aries</item>
+        <item>Gemini</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+    </string-array>
 </resources>
