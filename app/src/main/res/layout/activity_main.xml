@@ -11,11 +11,11 @@
         android:layout_width="319dp"
         android:layout_height="136dp"
         android:fontFamily="@font/pettaya"
-        android:text="Ramalan Zodiak & Shio"
+        android:text="Ramalan Shio dan Zodiak"
         android:textAlignment="center"
         android:textColor="@android:color/holo_purple"
         android:textSize="50sp"
-        app:flow_verticalAlign="center"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,21 +41,18 @@
         android:layout_width="159dp"
         android:layout_height="32dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="5dp"
         android:fontFamily="@font/popreg"
         android:text="Ramalan Zodiak"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_cari_zodiak"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_cari_zodiak" />
 
     <ImageButton
         android:id="@+id/daftarshio"
         android:layout_width="141dp"
         android:layout_height="137dp"
         android:layout_marginTop="212dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="30dp"
         android:background="#03FFFFFF"
         android:onClick="ramalan"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,26 +63,24 @@
         android:id="@+id/textView4"
         android:layout_width="143dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="30dp"
         android:fontFamily="@font/popreg"
         android:text="Ramalan Shio"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/daftarshio"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintTop_toBottomOf="@+id/daftarshio" />
 
     <ImageButton
         android:id="@+id/ramalan"
         android:layout_width="141dp"
         android:layout_height="137dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="30dp"
         android:background="#03FFFFFF"
         android:onClick="ramalan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/ramalan1" />
+        app:srcCompat="@drawable/carishio" />
 
     <ImageButton
         android:id="@+id/bt_daftar_zodiak"
@@ -99,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/cekshio" />
+        app:srcCompat="@drawable/carizodiak" />
 
     <EditText
         android:id="@+id/datedeparture"
@@ -124,7 +119,7 @@
         android:id="@+id/textView7"
         android:layout_width="161dp"
         android:layout_height="54dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="76dp"
         android:fontFamily="@font/popreg"
         android:text="Silahkan Pilih menu dibawah ini"
         android:textAlignment="center"
@@ -136,18 +131,20 @@
         android:id="@+id/textView8"
         android:layout_width="156dp"
         android:layout_height="27dp"
+        android:layout_marginStart="44dp"
         android:text="Cari Zodiak"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_daftar_zodiak" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="140dp"
         android:layout_height="27dp"
+        android:layout_marginEnd="30dp"
         android:text="Cari Shio"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="242dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramalan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
