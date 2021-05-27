@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         datedeparture = findViewById(R.id.datedeparture);
         Tanggal = (EditText) findViewById(R.id.datedeparture);
-        bt_zodiak = (ImageButton) findViewById(R.id.bt_cari_zodiak);
+       // bt_zodiak = (ImageButton) findViewById(R.id.bt_cari_zodiak);
 
         myCalendar = Calendar.getInstance();
         date = new DatePickerDialog.OnDateSetListener() {
@@ -58,15 +58,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void bt_cari_zodiak(View view) {
-        Intent intent = new Intent(MainActivity.this, cari_zodiak.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
-    }
-
-    public void ramalan(View view) {
+    public void bt_ramalan_zodiak(View view) {
         Intent intent = new Intent(MainActivity.this, ramalan.class);
         startActivity(intent);
+      //  overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+    }
+    public void bt_ramalanshio(View view) {
+        Intent intent = new Intent(MainActivity.this, Activity_ramalan_shio.class);
+        startActivity(intent);
+        //  overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+    }
+    public void bt_carishio (View view) {
+        Intent intent = new Intent(MainActivity.this, Activity_carishio.class);
+        startActivity(intent);
+        //overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
+    }
+    public void bt_carizodiak (View view) {
+        Intent intent = new Intent(MainActivity.this, Activity_carizodiak.class);
+        startActivity(intent);
+       // overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
     }
 
 }

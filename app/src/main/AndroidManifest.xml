@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyZodiak">
-        <activity android:name=".ramalan"></activity>
+        <activity android:name=".Activity_ramalan_shio"></activity>
+        <activity android:name=".Activity_carizodiak" />
+        <activity android:name=".Activity_carishio" />
+        <activity android:name=".ramalan" />
         <activity android:name=".cari_zodiak" />
         <activity android:name=".Splash">
             <intent-filter>

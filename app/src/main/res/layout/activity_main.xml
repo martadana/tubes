@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_splash"
         android:layout_width="319dp"
         android:layout_height="136dp"
         android:fontFamily="@font/pettaya"
@@ -23,41 +23,42 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <ImageButton
-        android:id="@+id/bt_cari_zodiak"
+        android:id="@+id/bt_ramalan_zodiak"
         android:layout_width="157dp"
         android:layout_height="138dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="208dp"
         android:background="#00FFFFFF"
-        android:onClick="bt_cari_zodiak"
-        app:layout_constraintEnd_toStartOf="@+id/ramalan"
+        android:onClick="bt_ramalan_zodiak"
         app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/cekshio" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="159dp"
         android:layout_height="32dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="28dp"
         android:fontFamily="@font/popreg"
         android:text="Ramalan Zodiak"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_cari_zodiak" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_ramalan_zodiak" />
 
     <ImageButton
-        android:id="@+id/daftarshio"
+        android:id="@+id/bt_ramalanshio"
         android:layout_width="141dp"
         android:layout_height="137dp"
         android:layout_marginTop="212dp"
         android:layout_marginEnd="30dp"
         android:background="#03FFFFFF"
-        android:onClick="ramalan"
+        android:onClick="bt_ramalanshio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/ramalan1" />
+
 
     <TextView
         android:id="@+id/textView4"
@@ -68,30 +69,28 @@
         android:text="Ramalan Shio"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/daftarshio" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_ramalanshio" />
 
     <ImageButton
-        android:id="@+id/ramalan"
+        android:id="@+id/bt_carishio"
         android:layout_width="141dp"
         android:layout_height="137dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="30dp"
         android:background="#03FFFFFF"
-        android:onClick="ramalan"
+        android:onClick="bt_carishio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/carishio" />
 
     <ImageButton
-        android:id="@+id/bt_daftar_zodiak"
+        android:id="@+id/bt_carizodiak"
         android:layout_width="157dp"
         android:layout_height="138dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
-        android:onClick="bt_cari_zodiak"
-        app:layout_constraintEnd_toStartOf="@+id/ramalan"
-        app:layout_constraintHorizontal_bias="0.254"
+        android:onClick="bt_carizodiak"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/carizodiak" />
@@ -113,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_splash" />
 
     <TextView
         android:id="@+id/textView7"
@@ -125,26 +124,28 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_splash" />
+
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv_carizodiak"
         android:layout_width="156dp"
         android:layout_height="27dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="28dp"
         android:text="Cari Zodiak"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_daftar_zodiak" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_carizodiak" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/tv_carishio"
         android:layout_width="140dp"
         android:layout_height="27dp"
         android:layout_marginEnd="30dp"
         android:text="Cari Shio"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ramalan" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_carishio" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
