@@ -95,25 +95,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:srcCompat="@drawable/carizodiak" />
 
-    <EditText
-        android:id="@+id/datedeparture"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/teal_700"
-
-        android:backgroundTint="#03913232"
-        android:clickable="true"
-        android:focusable="true"
-        android:hint="Date"
-        android:padding="12dp"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_splash" />
-
     <TextView
         android:id="@+id/textView7"
         android:layout_width="161dp"

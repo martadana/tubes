@@ -26,37 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        datedeparture = findViewById(R.id.datedeparture);
-        Tanggal = (EditText) findViewById(R.id.datedeparture);
-       // bt_zodiak = (ImageButton) findViewById(R.id.bt_cari_zodiak);
-
-        myCalendar = Calendar.getInstance();
-        date = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-
-                TextView tanggal = findViewById(R.id.datedeparture);
-                String myFormat = "dd-MMMM-yyyy";
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
-                tanggal.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
-
-        datedeparture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new DatePickerDialog(MainActivity.this, date,
-                        myCalendar.get(Calendar.YEAR),
-                        myCalendar.get(Calendar.MONTH),
-                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
-            }
-        });
     }
-
 
     public void bt_ramalan_zodiak(View view) {
         Intent intent = new Intent(MainActivity.this, ramalan.class);

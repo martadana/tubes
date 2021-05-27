@@ -8,12 +8,12 @@
 
 
     <TextView
-        android:id="@+id/tv_carizodiak"
+        android:id="@+id/tv_hasilzodiak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:fontFamily="@font/pettaya"
-        android:text="Cari Zodiak"
+        android:text="Zodiak anda"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -21,39 +21,55 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/datedisp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:fontFamily="@font/popbold"
-        android:text=" "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dob" />
+        android:id="@+id/points"
+        android:layout_width="306dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="72dp"
 
-    <TextView
-        android:id="@+id/dob"
-        android:layout_width="133dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="92dp"
-        android:fontFamily="@font/popbold"
-        android:text="Tekan untuk Memilih Tanggal"
+        android:layout_marginEnd="122dp"
+        android:fontFamily="@font/popreg"
+        android:text="Tekan untuk masukkan tanggal lahir"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_carizodiak" />
+        app:layout_constraintTop_toBottomOf="@+id/datedisp" />
+
+    <TextView
+        android:id="@+id/datedisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="177dp"
+        android:fontFamily="@font/popbold"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points2" />
+
+    <TextView
+        android:id="@+id/points2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="172dp"
+        android:fontFamily="@font/popbold"
+        android:text="adalah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hasilzodiak" />
 
     <Button
-        android:id="@+id/findzodiac"
-        android:layout_width="232dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="84dp"
-        android:text="cari zodiak"
+        android:id="@+id/back"
+        android:layout_width="211dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="56dp"
+        android:text="Kembali"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datedisp" />
+        app:layout_constraintTop_toBottomOf="@+id/points" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
