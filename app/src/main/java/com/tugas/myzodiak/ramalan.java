@@ -10,7 +10,7 @@ public class ramalan extends AppCompatActivity {
     RecyclerView recyclerView;
 
     String s1[], s2[];
-    int images [] = {R.drawable.aries, R.drawable.gemini};
+    int images [] = {R.drawable.aries,R.drawable.taurus, R.drawable.gemini,R.drawable.cencer, R.drawable.leo, R.drawable.virgo, R.drawable.libra, R.drawable.scorpio, R.drawable.sagitarius, R.drawable.capri, R.drawable.aquarius, R.drawable.pisces};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

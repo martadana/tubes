@@ -2,11 +2,30 @@
     <string name="app_name">MyZodiak</string>
     <string-array name="zodiak">
         <item>Aries</item>
+        <item>Taurus</item>
         <item>Gemini</item>
-
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagitarius</item>
+        <item>Capricon</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
     </string-array>
 
     <string-array name="description">
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
+        <item>Lihat info selengkapnya</item>
         <item>Lihat info selengkapnya</item>
         <item>Lihat info selengkapnya</item>
     </string-array>
