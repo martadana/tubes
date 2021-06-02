@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyZodiak">
-        <activity android:name=".hasil_zodiak"></activity>
+        <activity android:name=".hasil_shio"></activity>
+        <activity android:name=".hasil_zodiak" />
         <activity android:name=".Activity_ramalan_shio" />
         <activity android:name=".Activity_carizodiak" />
         <activity android:name=".Activity_carishio" />

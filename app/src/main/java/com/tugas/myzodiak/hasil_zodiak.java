@@ -18,6 +18,7 @@ public class hasil_zodiak extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil_zodiak);
+
         gambar = findViewById(R.id.gb_zodiak);
         txt = findViewById(R.id.datedisp);
         points = findViewById(R.id.points);
@@ -26,12 +27,7 @@ public class hasil_zodiak extends AppCompatActivity {
 
         Intent mIntent = getIntent();
         int intValues = mIntent.getIntExtra("intValue", 0);
-        if (intValues == 0) {
-            points2.setText("");
-            gambar.setImageResource(R.drawable.sugiono);
-            txt.setText("Masukin Tanggal dulu bos");
-            points.setText("");
-        }
+
         if (intValues == 1) {
             points2.setText("Zodiak mu adalah :");
             txt.setText("Sagittarius (November 22 - December 21)");

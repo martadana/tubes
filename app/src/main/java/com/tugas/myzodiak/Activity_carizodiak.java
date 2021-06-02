@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -156,10 +157,11 @@ public class Activity_carizodiak extends AppCompatActivity {
         findzodiac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                openNewActivity(view);
-
+                if(datedisp.getText().toString().length() <=4) {
+                    Toast.makeText(getApplicationContext(), "Isi tanggal terlebih dahulu!", Toast.LENGTH_LONG).show();
+                } else {
+                    openNewActivity(view);
+                }
             }
 
             private void openNewActivity(View view) {
