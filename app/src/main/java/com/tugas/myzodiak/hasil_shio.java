@@ -33,76 +33,86 @@ public class hasil_shio extends AppCompatActivity {
 
         if (intValues == 0) {
             points2.setText("Shio mu adalah :");
-            txt.setText("Tikus" + sub );
+            txt.setText("Tikus " + sub );
+            gambar.setImageResource(R.drawable.tikus);
             points.setText("Orang yang memiliki shio tikus, banyak dikenal sebagai orang yang optimis dan energetik. Hal ini membuat mereka banyak disukai oleh orang lain. Namun terkadang, karena kemampuan komunikasinya yang lemah, tidak jarang orang dengan shio ini dianggap tidak ramah.");
         }
 
         if (intValues == 1) {
             points2.setText("Shio mu adalah :");
             txt.setText("Kerbau " + sub );
+            gambar.setImageResource(R.drawable.kerbau);
             points.setText("Secara umum, shio kerbau memiliki karater yang pekerja keras, pantang menyerah dan gigih dalam bekerja. Sehingga seseorang yang lahir sebagai shio kerbau, sangat cocok dijadikan sebagai seorang pemimpin, karena sifatnya yang jujur, berani dan bertanggung jawab penuh atas pekerjaannya.");
         }
 
         if (intValues == 2) {
             points2.setText("Shio mu adalah :");
-            txt.setText("Macan");
+            txt.setText("Macan "+sub);
+            gambar.setImageResource(R.drawable.macan);
             points.setText("shio Macan juga memiliki kepribadian yang bisa menularkan aura positif ke orang lain. Namun, pemilik shio Macan ternyata memiliki pembawaan yang mudah resah, tidak bisa berdiam diri, atau bersikap lebih tenang terhadap sesuatu yang sedang dipikirkannya.");
         }
 
         if (intValues == 3) {
             points2.setText("Shio mu adalah :");
-            txt.setText("Rabbit (February 19 - March 20)");
-            points.setText("Pisces, a water sign, is the last constellation of the zodiac. It's symbolized by two fish swimming in opposite directions, representing the constant division of Pisces' attention between fantasy and reality. As the final sign, Pisces has absorbed every lesson — the joys and the pain, the hopes and the fears — learned by all of the other signs. ");
+            txt.setText("Kelinci "+sub);
+            gambar.setImageResource(R.drawable.kelinci);
+            points.setText("Kelinci melambangkan kesehatan dan umur panjang. Mereka yang terlahir dengan shio kelinci biasanya senang berkumpul bersama sahabat-sahabat terdekat dan keluarga. Pemilik shio ini juga dikenal populer, baik hati, jujur, mencintai kedamaian, ramah, penengah masalah, dan senang mencari solusi.");
         }
 
         if (intValues == 4) {
             points2.setText("Shio mu adalah :");
             txt.setText("Naga "+sub);
-            points.setText("Pisces, a water sign, is the last constellation of the zodiac. It's symbolized by two fish swimming in opposite directions, representing the constant division of Pisces' attention between fantasy and reality. As the final sign, Pisces has absorbed every lesson — the joys and the pain, the hopes and the fears — learned by all of the other signs. ");
+            gambar.setImageResource(R.drawable.naga);
+            points.setText("Naga adalah satu-satunya hewan legendaris yang masuk dalam urutan shio. Sebagai hewan legendaris yang dikenal sangat kuat, mereka yang terlahir dengan shio naga biasa dikenal sangat energik, baik hati dan suka menolong. Di Tiongkok, naga juga dipercaya melambangkan keberuntungan, maka dari itu banyak orang Tiongkok yang mengatakan bahwa mereka yang lahir di tahun naga akan sukses di kemudian hari. ");
         }
 
         if (intValues == 5) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Snake (March 21 - April 19)");
-            points.setText("Aries loves to be number one, so it’s no surprise that these audacious rams are the first sign of the zodiac. Bold and ambitious, Aries dives headfirst into even the most challenging situations.");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Ular "+sub);
+            gambar.setImageResource(R.drawable.ular);
+            points.setText("Di Tiongkok, ular merepresentasikan kelembutan. Mereka yang memiliki shio ular dikenal bijaksana, pandai menyimpan rahasia, cerdas, memiliki daya tarik tinggi, dan simpatik, Sayangnya, mereka juga dikenal terlalu introvert, sering merasa insecure, mudah iri, pemalas, serakah, serta arogan. Cocok dengan shio ayam dan kerbau.");
 
         }
 
         if (intValues == 6) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Horse (April 20 - May 20)");
-            points.setText(
-                    "Taurus is an earth sign represented by the bull. Like their celestial spirit animal, Taureans enjoy relaxing in serene, bucolic environments surrounded by soft sounds, soothing aromas, and succulent flavors\n");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Kuda "+sub);
+            gambar.setImageResource(R.drawable.kuda);
+            points.setText("Menurut legenda Tiongkok, kuda melambangkan kebebasan. Sebagai pemilik shio kuda, mereka dikenal energik, mandiri, suka traveling, pandai membuat keputusan, memiliki tujuan hidup yang jelas, aktif, populer, namun tidak sabar, egois, arogan dan terlalu percay diri. Cocok dengan shio anjing dan macan.");
         }
 
 
         if (intValues == 7) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Sheep (May 21 - June 20)7");
-            points.setText("Have you ever been so busy that you wished you could clone yourself just to get everything done? That’s the Gemini experience in a nutshell. Appropriately symbolized by the celestial twins, this air sign was interested in so many pursuits that it had to double itself. ");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Kambing "+sub);
+            gambar.setImageResource(R.drawable.kambing);
+            points.setText("Di Tiongkok, shio kambing justru lebih dikenal sebagai shio domba, dan dalam legenda mereka, kambing dikenal melambangkan harmoni atau kebersamaan. Mereka yang lahir di tahun kambing suka dengan kesendirian, kreatif, suka berimajinasi, mementingkan penampilan, memiliki pribadi yang tenang, sopan, dan memiliki selera yang tinggi. ");
         }
 
         if (intValues == 8) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Monkey (June 21 - July 22)");
-            points.setText("Cancer is a cardinal water sign. Represented by the crab, this crustacean seamlessly weaves between the sea and shore representing Cancer’s ability to exist in both emotional and material realms. Cancers are highly intuitive and their psychic abilities manifest in tangible spaces: For instance, Cancers can effortlessly pick up the energies in a room");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Monyet "+sub);
+            gambar.setImageResource(R.drawable.monyet);
+            points.setText("Dalam kepercayaan Tiongkok, monyet melambangkan kebahagiaan. Mereka yang terlahir dengan shio monyet gemar mencari kesenangan, sering menjadi life of the party, energik, fleksibel, bijaksana, cerdik, banyak akal, karismatik, loyal dan kreatif. Di sisi lain, pemilik shio monyet juga dikenal ceroboh, egois, mementingkan diri sendiri, tidak setia, arogan, pemalas, dan tidak bisa diam. Cocok dengan shio naga dan tikus.");
         }
-
 
         if (intValues == 9) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Chicken (July 23 - August 22)");
-            points.setText("Roll out the red carpet because Leo has arrived. Leo is represented by the lion and these spirited fire signs are the kings and queens of the celestial jungle. They’re delighted to embrace their royal status: Vivacious, theatrical, and passionate, Leos love to bask in the spotlight and celebrate themselves.");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Ayam "+sub);
+            gambar.setImageResource(R.drawable.ayam);
+            points.setText("Menurut legenda Tiongkok, ayam melambangkan ketelitian. Mereka yang lahir di tahun ayam dikenal praktis, bisa diandalkan, suka menganalisis, jujur, perfeksionis, pekerja keras, serta mandiri. Sayangnya, pemilik shio ini juga dikenal konservatif, arogan, mementingkan diri sendiri, gemar berpikir negatif, serta sulit diatur. Cocok dengan shio kerbau dan ular. ");
         }
         if (intValues == 10) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Dog (August 23 - September 22)");
-            points.setText("Virgo is an earth sign historically represented by the goddess of wheat and agriculture, an association that speaks to Virgo’s deep-rooted presence in the material world. Virgos are logical, practical, and systematic in their approach to life. This earth sign is a perfectionist at heart and isn’t afraid to improve skills through diligent and consistent practice.");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Anjing "+sub);
+            gambar.setImageResource(R.drawable.anjing);
+            points.setText("Di Tiongkok, anjing dikenal sebagai lambang loyalitas. Mereka yang memiliki shio anjing dikenal sangat setia, jujur, memiliki banyak teman, baik hati, bertanggung jawab, serta pandai dalam berbisnis, namun mereka sulit menemukan pasangan yang tepat, \"penjilat\" yang ulung, sensitif, temperamen, keras kepala, dan kurang disiplin. Cocok dengan shio macan dan kuda.");
         }
         if (intValues == 11) {
-            points2.setText("Your zodiac sign is:");
-            txt.setText("Pig (September 23 - October 22)");
-            points.setText("Libra is an air sign represented by the scales (interestingly, the only inanimate object of the zodiac), an association that reflects Libra's fixation on balance and harmony. Libra is obsessed with symmetry and strives to create equilibrium in all areas of life.");
+            points2.setText("Shio mu adalah :");
+            txt.setText("Babi "+sub);
+            gambar.setImageResource(R.drawable.babi);
+            points.setText("Sebagai hewan yang berada di urutan terakhir dalam shio, babi melambangkan sifat rendah hati. Mereka yang terlahir di tahun babi dikenal akan keramahan dan ketulusan hatinya, sopan, suka menolong, easygoing, jujur, bisa dipercaya dan tulus. Sayangnya, mereka juga dikenal sombong, keras kepala, naif, mementingkan diri sendiri, materialis serta pemalas. Cocok dengan shio kelinci dan kambing. ");
         }
 
 

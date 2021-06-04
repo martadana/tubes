@@ -34,12 +34,13 @@
 
     <TextView
         android:id="@+id/dob"
-        android:layout_width="133dp"
-        android:layout_height="50dp"
+        android:layout_width="184dp"
+        android:layout_height="96dp"
         android:layout_marginTop="92dp"
         android:fontFamily="@font/popbold"
         android:text="Tekan untuk Memilih Tanggal"
         android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_carizodiak" />
