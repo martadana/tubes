@@ -11,13 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+
+public class Adapter2 extends RecyclerView.Adapter<Adapter2.MyViewHolder> {
 
     String data1[], data2[];
     int images [];
     Context context;
 
-    public MyAdapter(Context ct,String s1[], String s2[], int img[]){
+    public Adapter2(Context ct,String s1[], String s2[], int img[]){
         context = ct;
         data1 = s1;
         data2 = s2;
@@ -41,7 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Toast.makeText(context, data1[position], Toast.LENGTH_LONG).show();
+                // Toast.makeText(context, data1[position], Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(context, Detail_zodiakshio.class);
                 intent.putExtra("image_url", images[position]);
                 intent.putExtra("nama_zodiak", data1[position]);

@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class hasil_zodiak extends AppCompatActivity {
     TextView txt, points, points2;
     ImageView gambar;
-    Button back;
+    Button back, bt_lanjut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,10 @@ public class hasil_zodiak extends AppCompatActivity {
         setContentView(R.layout.activity_hasil_zodiak);
 
         gambar = findViewById(R.id.gb_zodiak);
+        bt_lanjut = findViewById(R.id.bt_lanjut);
         txt = findViewById(R.id.datedisp);
         points = findViewById(R.id.points);
-        back = findViewById(R.id.back);
+        back = findViewById(R.id.bt_ramalshio);
         points2 = findViewById(R.id.points2);
 
         Intent mIntent = getIntent();
@@ -111,7 +112,13 @@ public class hasil_zodiak extends AppCompatActivity {
             gambar.setImageResource(R.drawable.scorpio);
             points.setText("Sifat yang kuat dari sosok Scorpio dilambangkan oleh kalajengking. Dengan sifatnya ini, Scorpio dapat membuat orang-orang di sekitarnya terjaga dengan aman.");
         }
-
+        bt_lanjut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(hasil_zodiak.this, ramalan.class);
+                startActivity(intent);
+            }
+        });
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

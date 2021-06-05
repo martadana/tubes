@@ -1,18 +1,21 @@
 package com.tugas.myzodiak;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class hasil_shio extends AppCompatActivity {
     public TextView datedisp,dob;
     TextView txt,txt2, points,points2;
-    Button back;
+    Button back, bt_lanjutshio;
     ImageView gambar;
 
     @Override
@@ -24,7 +27,8 @@ public class hasil_shio extends AppCompatActivity {
         gambar = findViewById(R.id.gb_zodiak);
         txt = findViewById(R.id.shio);
         points = findViewById(R.id.points);
-        back = findViewById(R.id.back);
+        back = findViewById(R.id.bt_ramalshio);
+        bt_lanjutshio = findViewById(R.id.bt_lanjutshio);
         points2 = findViewById(R.id.points2);
 
         Intent terima = getIntent();
@@ -115,11 +119,13 @@ public class hasil_shio extends AppCompatActivity {
             points.setText("Sebagai hewan yang berada di urutan terakhir dalam shio, babi melambangkan sifat rendah hati. Mereka yang terlahir di tahun babi dikenal akan keramahan dan ketulusan hatinya, sopan, suka menolong, easygoing, jujur, bisa dipercaya dan tulus. Sayangnya, mereka juga dikenal sombong, keras kepala, naif, mementingkan diri sendiri, materialis serta pemalas. Cocok dengan shio kelinci dan kambing. ");
         }
 
-
-
-
-
-
+        bt_lanjutshio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(hasil_shio.this, Activity_ramalan_shio.class);
+                startActivity(intent);
+            }
+        });
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
